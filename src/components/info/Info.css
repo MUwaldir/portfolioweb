@@ -1,0 +1,49 @@
+.info-container {
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-bottom: 99vh;
+  
+  
+  }
+  
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .boximg{
+    width: 100%;
+  
+  }
+  .boximg :hover>img {
+    transform: scale(1.2);
+    opacity: 0.9;
+    transition: all 0.5s;
+  }
+ 
+.card img{
+  width: 50;
+  height: 200px;
+}
+  @media (max-width: 950px) {
+    .info-container {
+      
+      width: 100%;
+    }
+    .card img{
+      width: 20;
+      height: 100px;
+    }
+    .boximg{
+      margin: 0;
+    }
+   .skill{
+    padding: 1rem !important;
+    display: flex;
+    justify-content: center;
+   }
+    
+  }
