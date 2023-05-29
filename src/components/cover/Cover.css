@@ -7,6 +7,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+  }
+  .cover_negro{
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
   }
   
   .video {
