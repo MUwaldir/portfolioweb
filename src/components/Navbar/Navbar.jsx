@@ -11,8 +11,8 @@ const Navbar = ({ isScrolling }) => {
       <div className={`navbar-logo ${isScrolling > 20 ? "float" : null}`} onClick={toTheTop}>
         Waldir Merjildo 
       </div>
-      <a className="cv" href="./cv/waldir merjildo.pdf" download target="_blanck">
-        <button>Download CV</button>
+      <a className="cv" href="./cv/Merjildo_WaldirCV.pdf" download target="_blanck">
+        <button className="btnCv">Download CV</button>
       </a>
     </nav>
   );

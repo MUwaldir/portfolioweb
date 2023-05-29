@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 
-// Recordendo que el font-awesome sirve para un formato de logo y mas. les deje el link en el README.md
+
 
 const Footer = () => {
+//     const [abrir, setAbrir] = useState(false)
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//         setAbrir(true)
+//     },4000)
+//   },[])
+
   return (
+   
     <footer className="footer">
       <div className="footer-info">
-        <h1>Waldir</h1>
-        {/* <p style="color:#FF0000";>Red paragraph text</p> */}
+        <h1>Waldir - Desarrolador full-stack</h1>
+
         <p>Peruvian, Lima</p>
       </div>
       <div className="footer-contact">
@@ -18,7 +26,7 @@ const Footer = () => {
       <div className="footer-sns">
         <div className="design-by">Copyright © 2023 waldir merjildo</div>
         <div className="sns-links">
-          {/* aqui yo agregue varias de mis redes sociales ques mas utilizo actualmente */}
+
           <a
             href="https://www.linkedin.com/in/waldir-ruben-merjildo-ubaldo-819170215/"
             target="_blank"

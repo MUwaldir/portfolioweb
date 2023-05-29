@@ -1,10 +1,11 @@
-import React from "react";
+
 import "./Slider.css";
 
 // Debo Arreglar los slider con boton de siguiente o ciclo infinito ya que estos no lo presentan
 
 const slidesInfo = [
   {
+    id:1,
     src: "./images/passwordgenerator.png",
     title:"Password Generator",
     alt: "Project 1",
@@ -16,6 +17,7 @@ const slidesInfo = [
   
 
   {
+    id:2,
     src: "./images/juego-nintendo.png",
     title:"Design - Game - NINTENDO",
     alt: "Project 1",
@@ -24,6 +26,7 @@ const slidesInfo = [
     url:"https://muwaldir.github.io/proyectoboostrap/"
   },
   {
+    id:3,
     src: "./images/movie-details.png",
     title:"Movie Details",
     alt: "Project 1",
@@ -35,6 +38,7 @@ const slidesInfo = [
 
   
   {
+    id:4,
     src: "./images/libro-ventas.png",
     title:"Web Development Book Addresses",
     alt: "Project 1",
@@ -44,14 +48,16 @@ const slidesInfo = [
   },
  
   {
+    id:5,
     src: "./images/cat-game.png",
     title:"Cat Game",
     alt: "Project 1",
     desc: "Project cat game , which consists of selecting a box from 9 and clicking on it will insert the letter X or the number 0 . The winner is the one who gets 3 boxes with the same graphic in a continuous way.",
     tech:"JS, CSS, HTML, GITHUB",
-    url:"https://djangopassword.onrender.com/"
+    url:"https://muwaldir.github.io/juegoxo/"
   },
   {
+    id:6,
     src: "./images/calculadorajs.png",
     title:"Calculadora",
     alt: "Project 1",
@@ -62,6 +68,7 @@ const slidesInfo = [
   
   
   {
+    id:7,
     src: "./images/pexels-photo-4050290.jpeg",
     title:"tasks",
     alt: "Project 1",
@@ -70,6 +77,7 @@ const slidesInfo = [
     url:"https://django-task-crud.onrender.com/"
   },
   {
+    id:8,
     src: "./images/inters-simpleycompuesto.png",
     title:"Simple and Compound Interest Calculator",
     alt: "Project 1",
@@ -78,6 +86,7 @@ const slidesInfo = [
     url:"https://waldirmerjildo.github.io/curso_practico_javascrip/"
   },
   {
+    id:9,
     src: "./images/ozzy-drix.png",
     title:"Ozzy Drix",
     alt: "Project 1",
@@ -86,6 +95,7 @@ const slidesInfo = [
     url:"https://waldirmerjildo.github.io/patyozzydrix/"
   },
   {
+    id:10,
     src: "./images/pinguino.png",
     title:"Pingüino",
     alt: "Project 1",
@@ -98,20 +108,20 @@ const slidesInfo = [
 
 
 
-const slides = slidesInfo.map((slide) => (
-  <div className="slide-container">
-    <img src={slide.src} alt={slide.alt} />
-      <div className="box_desc">
-          <p className="desc"><strong>Description: </strong> <br></br>{slide.desc}</p>
-          <p className="tech"><strong>Technologies Used:</strong> {slide.tech}</p>
-          <a type="button"  className="btn" href={slide.url}>web</a>
+// const slides = slidesInfo.map((slide) => (
+//   <div className="slide-container">
+//     <img src={slide.src} alt={slide.alt} />
+//       <div className="box_desc">
+//           <p className="desc"><strong>Description: </strong> <br></br>{slide.desc}</p>
+//           <p className="tech"><strong>Technologies Used:</strong> {slide.tech}</p>
+//           <a type="button"  className="btn" href={slide.url}>web</a>
 
-    </div>
-    <div className="slide-desc">
-      <span>{slide.title}</span>
+//     </div>
+//     <div className="slide-desc">
+//       <span>{slide.title}</span>
       
-    </div>
-  </div>
-));
+//     </div>
+//   </div>
+// ));
 
-export default slides;
+export default slidesInfo;
